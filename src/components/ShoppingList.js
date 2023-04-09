@@ -47,7 +47,7 @@ function ShoppingList({ items, addItem }) {
 
   return (
     <div className="ShoppingList">
-      <ItemForm formData={formData} handleFormChange={handleFormChange} onItemFormSubmit={onItemFormSubmit}/>
+      <ItemForm formData={formData} handleFormChange={handleFormChange} onItemFormSubmit={onItemFormSubmit} />
       <Filter onCategoryChange={handleCategoryChange} searchKeyword={search} onSearchChange={handleSearchChange} />
       <ul className="Items">
         {itemsToDisplay.filter((item) => (
